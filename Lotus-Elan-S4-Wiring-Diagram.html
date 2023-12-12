@@ -2,9 +2,12 @@
 <html>
     <head>
         <script type="text/javascript">
+
+            var circuit_dropdown;
+
             function load_cicuits()
-            {
-                var circuit_dropdown = document.getElementById("circuits");
+            {   
+                circuit_dropdown = document.getElementById("circuits");
                 var circuit_list_items = document.getElementsByTagName("wdgroup:group");
                 for (let i=0; i<circuit_list_items.length; i++)
                 {
@@ -18,6 +21,21 @@
 
             function change_circuit()
             {
+                var i = circuit_dropdown.selectedIndex;
+                var selected_id = circuit_dropdown.options[i].value;
+                
+                var g_elements =  document.evaluate(
+                                                    "//g[count(ancestor::g)=1]/@id",
+                                                    document,
+                                                    document.createNSResolver("svg"),
+                                                    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+                                                    null
+                                                    );
+         for (let i=0; i<g_elements.snapshotLength; i++)
+	    {
+	        var g_id = node;
+	        alert(g_id);
+	    }   
             }
         </script>
     </head>
@@ -77,7 +95,21 @@
                         <text fill="#555555" xml:space="preserve" transform="matrix(.3317568 0 0 .3317568 43.30935 514.2251)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 4.5 9.504001 11.502001 13.500001 16.002 18 19.998002 25.002003 30.006005">Tail light</tspan></text>
                         <text fill="#555555" xml:space="preserve" transform="matrix(.3317568 0 0 .3317568 43.30935 529.3597)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 6.0030004 9 14.0058 18.5058 23.5116 26.0118 28.0116 30.011403 35.017206 40.023008">Brake light</tspan></text>
                         <text fill="#555555" xml:space="preserve" transform="matrix(.3317568 0 0 .3317568 43.30935 544.4973)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 2.5002003 7.506001 12.511802 14.511601 19.0116 24.017403 26.517603 31.523404">Indicator</tspan></text>
-                    </g>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 186.381 24.08206 188.0103"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 188.0103 24.08206 186.381"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M21.5393 195.2602V173.7547"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 195.2602V173.7547"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 175.6283 24.08206 177.2575"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 177.2575 24.08206 175.6283"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 173.7547H21.5393"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 179.1311H21.5393"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 181.0046 24.08206 182.6339"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 182.6339 24.08206 181.0046"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 184.5074H21.5393"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 189.8838H21.5393"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 193.3866 24.08206 191.7573"/>
+                        <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 191.7573 24.08206 193.3866"/>
+                        </g>
                 </g>
                 <g visibility="visible">
                     <rect transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" x="48.03708" y="18.57129" width="34.21215" height="27.01986"/>
@@ -852,20 +884,6 @@
                     <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 51.29709 24.08206 49.66781"/>
                     <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 55.04417 24.08206 56.67345"/>
                     <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 56.67345 24.08206 55.04417"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 186.381 24.08206 188.0103"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 188.0103 24.08206 186.381"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M21.5393 195.2602V173.7547"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 195.2602V173.7547"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 175.6283 24.08206 177.2575"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 177.2575 24.08206 175.6283"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 173.7547H21.5393"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 179.1311H21.5393"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 181.0046 24.08206 182.6339"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 182.6339 24.08206 181.0046"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 184.5074H21.5393"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 189.8838H21.5393"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 193.3866 24.08206 191.7573"/>
-                    <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 191.7573 24.08206 193.3866"/>
                     <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 195.2602H21.5393"/>
                     <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 100.0218V104.6301"/>
                     <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 104.6301H21.92333"/>
