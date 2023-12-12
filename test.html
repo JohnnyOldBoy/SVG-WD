@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function load_cicuits()
+            {
+                var circuit_img_list = document.getElementById("circuits"); 
+                var circuit_img = document.getElementsByName("object");
+                var circuit_list = circuit_img.getElementsByTagName("wdgroup:group");
+            }
+
+            function change_circuit()
+            {
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <select name="Circuits" id="circuits" onload="load_cicuits()" onchange="change_circuit()"></select>
+        </div>
+        <div>
+            <img data="Lotus-Elan-S4-Wiring-Diagram.svg" id="circuit_svg"/>
+        </div>
+    </body>
+</html>
