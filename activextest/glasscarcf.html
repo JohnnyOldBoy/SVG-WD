@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Glasscar</TITLE>
+<META NAME="Generator" CONTENT="TextPad 4.4">
+<META NAME="Author" CONTENT="?">
+<META NAME="Keywords" CONTENT="?">
+<META NAME="Description" CONTENT="?">
+<META http-equiv="X-UA-Compatible" content="chrome=1">
+<script language="javascript">
+
+function zoomIn()
+{
+
+	var svgDoc = window.document.svgimg.getSVGDocument();
+	var svgNode = svgDoc.getElementsByTagName("svg")[0];
+	svgWidth = svgNode.getAttribute("width");
+	svgHeight = svgNode.getAttribute("height");
+
+	newWidth = "";
+
+	for (i=0;i<svgWidth.length;i++)
+	{
+
+		if (IsNumeric(svgWidth[i]))
+		{
+			newWidth = newWidth + svgWidth[i];
+		}
+	}
+
+	newHeight = "";
+
+	for (i=0;i<svgHeight.length;i++)
+	{
+
+		if (IsNumeric(svgHeight[i]))
+		{
+			newHeight = newHeight + svgHeight[i];
+		}
+	}
+
+	newWidth = parseFloat(newWidth) + parseFloat((newWidth/100)*10);
+	newHeight = parseFloat(newHeight) + parseFloat((newHeight/100)*10);
+
+	svgimg.setAttribute("width", newWidth + "px");
+	svgimg.setAttribute("height", newHeight + "px");
+
+	svgNode.setAttribute("width",newWidth + "px");
+	svgNode.setAttribute("height",newHeight + "px");
+
+}
+
+function zoomOut()
+{
+
+	var svgDoc = window.document.svgimg.getSVGDocument();
+	var svgNode = svgDoc.getElementsByTagName("svg")[0];
+	svgWidth = svgNode.getAttribute("width");
+	svgHeight = svgNode.getAttribute("height");
+
+	newWidth = "";
+
+	for (i=0;i<svgWidth.length;i++)
+	{
+
+		if (IsNumeric(svgWidth[i]))
+		{
+			newWidth = newWidth + svgWidth[i];
+		}
+	}
+
+	newHeight = "";
+
+	for (i=0;i<svgHeight.length;i++)
+	{
+
+		if (IsNumeric(svgHeight[i]))
+		{
+			newHeight = newHeight + svgHeight[i];
+		}
+	}
+
+	newWidth = parseFloat(newWidth) - parseFloat((newWidth/100)*10);
+	newHeight = parseFloat(newHeight) - parseFloat((newHeight/100)*10);
+
+	if ( parseFloat(newWidth) > 0 && parseFloat(newHeight) > 0 )
+	{
+		svgimg.setAttribute("width", newWidth + "px");
+		svgimg.setAttribute("height", newHeight + "px");
+
+		svgNode.setAttribute("width",newWidth + "px");
+		svgNode.setAttribute("height",newHeight + "px");
+	}
+
+}
+
+function IsNumeric(ch)
+{
+	var validChars = "0123456789.";
+	var isNumber=true;
+
+	if (validChars.indexOf(ch) == -1)
+	{
+		isNumber = false;
+	}
+
+	return isNumber;
+
+}
+
+</script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#FF0000" VLINK="#800000" ALINK="#FF00FF" BACKGROUND="?">
+<input type="textbox" id="HSText" />
+<input id="zoom_in"  type="button" value="Zoom in"onClick="zoomIn()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="zoom_out" type="button" value="Zoom out" onClick="zoomOut()">
+<P>
+<object id="svgimg" width="700" height="400" type="image/svg+xml" data='documents/glasscar.svg'>
+</object>
+
+</BODY>
+</HTML>

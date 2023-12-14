@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="svgElem" width="100%" height="100%" version="1.1" viewBox="0 0 4000 3000"
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:drag="http://www.codedread.com/dragsvg"
+    onload="initializeDraggableElements(); enableDrag(document.getElementById('svg4')); alert(window.document.doctype.name)"
+    onmouseup="mouseUp(evt)"
+    onmousemove="mouseMove(evt)"
+    >
+<script id="draggableLibrary" xlink:href="dragsvg.js" />
+	<g id="svg1" drag:enable="true">
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.0" x="325" y="20" width="150" height="100">
+			<rect x="1" y="1" width="148" height="98" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #FFFFFF" transform="translate(-1,1) "/>
+			<rect x="41" y="30" width="20" height="40" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #9dc2de" transform="translate(-1,1) "/>
+			<rect x="86" y="30" width="20" height="40" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #9dc2de"/>
+		</svg>
+	</g>
+	<g id="svg2" drag:enable="true"> 
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.0" x="50" y="100" width="250" height="200">
+			<rect x="1" y="1" width="248" height="198" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #FFFFFF" transform="translate(-1,1) "/>
+			<rect x="78" y="70" width="30" height="60" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #FFFF80" transform="translate(-1,1) "/>
+			<rect x="143" y="70" width="30" height="60" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #FFFF80"/>
+		</svg>
+	</g>
+	<g id="svg3" drag:enable="true">
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.0" x="500" y="100" width="250" height="200">
+			<rect x="1" y="1" width="248" height="198" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #FFFFFF" transform="translate(-1,1) "/>
+			<rect x="78" y="70" width="30" height="60" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #80FFFF" transform="translate(-1,1) "/>
+			<rect x="143" y="70" width="30" height="60" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #80FFFF"/>
+		</svg>
+	</g>
+	<g id="svg4" drag:enable="true" >
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.0" x="200" y="200" width="400" height="300">
+			<rect x="1" y="1" width="398" height="298" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #FFFFFF" transform="translate(-1,1) "/>
+			<rect x="125" y="100" width="50" height="100" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #80FF80" transform="translate(-1,1) "/>
+			<rect x="225" y="100" width="50" height="100" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #80FF80"/>
+		</svg>
+	</g>
+</svg>

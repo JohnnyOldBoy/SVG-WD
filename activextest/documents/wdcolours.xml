@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<AllColours>
+	<Colour id="bl">
+		<stroke>#4988ED</stroke>
+	</Colour>
+	<Colour id="br">
+		<stroke>#954A00</stroke>
+	</Colour>
+	<Colour id="el">
+		<stroke>#FFFFAA</stroke>
+	</Colour>
+	<Colour id="ge">
+		<stroke>#FFFF00</stroke>
+	</Colour>
+	<Colour id="gn">
+		<stroke>#00FF00</stroke>
+	</Colour>
+	<Colour id="gr">
+		<stroke>#C0C0C0</stroke>
+	</Colour>
+	<!-- <Colour id="nf">
+	<stroke>neutral
+	<stroke>
+</Colour> -->
+	<Colour id="og">
+		<stroke>#FF8000</stroke>
+	</Colour>
+	<Colour id="rs">
+		<stroke>#FFA4D1</stroke>
+	</Colour>
+	<Colour id="rt">
+		<stroke>#FF0000</stroke>
+	</Colour>
+	<Colour id="sw">
+		<stroke>#000000</stroke>
+	</Colour>
+	<Colour id="vi">
+		<stroke>#7600EC</stroke>
+	</Colour>
+	<Colour id="ws">
+		<stroke>#FFFFFF</stroke>
+	</Colour>
+	<Colour id="dgn">
+		<stroke>#006C36</stroke>
+	</Colour>
+	<Colour id="hbl">
+		<stroke>#A8FFFF</stroke>
+	</Colour>
+	<Colour id="hgn">
+		<stroke>#64FF64</stroke>
+	</Colour>
+	<Colour id="rbr">
+		<stroke>#800000</stroke>
+	</Colour>
+	<!-- <Colour id="x">braided cable
+</Colour>
+<Colour id="y">high tension
+</Colour>
+<Colour id="z">non-cable connection
+</Colour> -->
+	<Colour id="bl br">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="bl el">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="bl ge">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="bl gn">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="bl gr">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="bl nf">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="bl og">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="bl rs">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="bl rt">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="bl sw">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="bl vi">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="bl ws">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="bl hbl">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="bl hgn">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="bl rbr">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="br bl">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="br el">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="br ge">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="br gn">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="br gr">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="br nf">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="br og">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="br rs">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="br rt">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="br sw">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="br vi">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="br ws">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="br hbl">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="br hgn">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="br rbr">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="el bl">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="el br">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="el ge">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="el gn">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="el gr">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="el nf">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="el og">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="el rs">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="el rt">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="el sw">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="el vi">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="el ws">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="el hbl">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="el hgn">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="el rbr">
+		<stroke>#FFFFAA</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="ge bl">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="ge br">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="ge el">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="ge gn">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="ge gr">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="ge nf">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="ge og">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="ge rs">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="ge rt">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="ge sw">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="ge vi">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="ge ws">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="ge hbl">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="ge hgn">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="ge rbr">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="gn bl">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="gn br">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="gn el">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="gn ge">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="gn gr">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="gn nf">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="gn og">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="gn rs">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="gn rt">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="gn sw">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="gn vi">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="gn ws">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="gn hbl">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="gn hgn">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="gn rbr">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="gr bl">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="gr br">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="gr el">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="gr ge">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="gr gn">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="gr nf">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="gr og">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="gr rs">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="gr rt">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="gr sw">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="gr vi">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="gr ws">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="gr hbl">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="gr hgn">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="gr rbr">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="nf bl">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="nf br">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="nf el">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="nf ge">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="nf gn">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="nf gr">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="nf og">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="nf rs">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="nf rt">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="nf sw">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="nf vi">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="nf ws">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="nf hbl">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="nf hgn">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="nf rbr">
+		<stroke>neutral</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="og bl">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="og br">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="og el">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="og ge">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="og gn">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="og gr">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="og nf">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="og rs">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="og rt">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="og sw">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="og vi">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="og ws">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="og hbl">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="og hgn">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="og rbr">
+		<stroke>#FF8000</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="rs bl">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="rs br">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="rs el">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="rs ge">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="rs gn">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="rs gr">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="rs nf">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="rs og">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="rs rt">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="rs sw">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="rs vi">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="rs ws">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="rs hbl">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="rs hgn">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="rs rbr">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="rt bl">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="rt br">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="rt el">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="rt ge">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="rt gn">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="rt gr">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="rt nf">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="rt og">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="rt rs">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="rt sw">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="rt vi">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="rt ws">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="rt hbl">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="rt hgn">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="rt rbr">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="sw bl">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="sw br">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="sw el">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="sw ge">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="sw gn">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="sw gr">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="sw nf">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="sw og">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="sw rs">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="sw rt">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="sw vi">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="sw ws">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="sw hbl">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="sw hgn">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="sw rbr">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="vi bl">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="vi br">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="vi el">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="vi ge">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="vi gn">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="vi gr">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="vi nf">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="vi og">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="vi rs">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="vi rt">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="vi sw">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="vi ws">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="vi hbl">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="vi hgn">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="vi rbr">
+		<stroke>#7600EC</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="ws bl">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="ws br">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="ws el">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="ws ge">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="ws gn">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="ws gr">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="ws nf">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="ws og">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="ws rs">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="ws rt">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="ws sw">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="ws vi">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="ws hbl">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="ws hgn">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="ws rbr">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="hbl bl">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="hbl br">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="hbl el">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="hbl ge">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="hbl gn">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="hbl gr">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="hbl nf">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="hbl og">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="hbl rs">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="hbl rt">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="hbl sw">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="hbl vi">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="hbl ws">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="hbl hgn">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="hbl rbr">
+		<stroke>#A8FFFF</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="hgn bl">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="hgn br">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="hgn el">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="hgn ge">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="hgn gn">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="hgn gr">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="hgn nf">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="hgn og">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="hgn rs">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="hgn rt">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="hgn sw">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="hgn vi">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="hgn ws">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="hgn hbl">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="hgn rbr">
+		<stroke>#64FF64</stroke>
+		<stroke stroke-dasharray="5,8">#800000</stroke>
+	</Colour>
+	<Colour id="rbr bl">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#4988ED</stroke>
+	</Colour>
+	<Colour id="rbr br">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#954A00</stroke>
+	</Colour>
+	<Colour id="rbr el">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFAA</stroke>
+	</Colour>
+	<Colour id="rbr ge">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFF00</stroke>
+	</Colour>
+	<Colour id="rbr gn">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#00FF00</stroke>
+	</Colour>
+	<Colour id="rbr gr">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="rbr nf">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">neutral</stroke>
+	</Colour>
+	<Colour id="rbr og">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#FF8000</stroke>
+	</Colour>
+	<Colour id="rbr rs">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="rbr rt">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#FF0000</stroke>
+	</Colour>
+	<Colour id="rbr sw">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#000000</stroke>
+	</Colour>
+	<Colour id="rbr vi">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#7600EC</stroke>
+	</Colour>
+	<Colour id="rbr ws">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="rbr hbl">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#A8FFFF</stroke>
+	</Colour>
+	<Colour id="rbr hgn">
+		<stroke>#800000</stroke>
+		<stroke stroke-dasharray="5,8">#64FF64</stroke>
+	</Colour>
+	<Colour id="bl br ge">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="10,5">#954A00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="bl gn ws">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="10,5">#00FF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="bl rt sw">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#000000</stroke>
+	</Colour>
+	<Colour id="bl sw ge">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="10,5">#000000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="bl ws ge">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="bl ws gn">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#00FF00</stroke>
+	</Colour>
+	<Colour id="bl ws rt">
+		<stroke>#4988ED</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#FF0000</stroke>
+	</Colour>
+	<Colour id="br bl vi">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="10,5">#4988ED</stroke>
+		<stroke stroke-dasharray="5,10">#7600EC</stroke>
+	</Colour>
+	<Colour id="br gn ge">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="10,5">#00FF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="br gn ws">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="10,5">#00FF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="br gr ge">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="10,5">#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="br rt sw">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#000000</stroke>
+	</Colour>
+	<Colour id="br sw ge">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="10,5">#000000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="br sw ws">
+		<stroke>#954A00</stroke>
+		<stroke stroke-dasharray="10,5">#000000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="ge gn vi">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="10,5">#00FF00</stroke>
+		<stroke stroke-dasharray="5,10">#7600EC</stroke>
+	</Colour>
+	<Colour id="ge rt sw">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#000000</stroke>
+	</Colour>
+	<Colour id="ge sw gn">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="10,5">#000000</stroke>
+		<stroke stroke-dasharray="5,10">#00FF00</stroke>
+	</Colour>
+	<Colour id="ge ws vi">
+		<stroke>#FFFF00</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#7600EC</stroke>
+	</Colour>
+	<Colour id="gn bl ge">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="10,5">#4988ED</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="gn br ge">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="10,5">#954A00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="gn ge ws">
+		<stroke>#00FF00</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="gr ge vi">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#7600EC</stroke>
+	</Colour>
+	<Colour id="gr ge ws">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="gr rt vi">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#7600EC</stroke>
+	</Colour>
+	<Colour id="gr sw ge">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="10,5">#000000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="gr sw vi">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="10,5">#000000</stroke>
+		<stroke stroke-dasharray="5,10">#7600EC</stroke>
+	</Colour>
+	<Colour id="gr vi rs">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="10,5">#7600EC</stroke>
+		<stroke stroke-dasharray="5,10">#FFA4D1</stroke>
+	</Colour>
+	<Colour id="gr vi ws">
+		<stroke>#C0C0C0</stroke>
+		<stroke stroke-dasharray="10,5">#7600EC</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="rs rt ws">
+		<stroke>#FFA4D1</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="rt bl ge">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#4988ED</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="rt bl ws">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#4988ED</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="rt ge bl">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#4988ED</stroke>
+	</Colour>
+	<Colour id="rt ge gn">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#00FF00</stroke>
+	</Colour>
+	<Colour id="rt ge sw">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#000000</stroke>
+	</Colour>
+	<Colour id="rt ge vi">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#7600EC</stroke>
+	</Colour>
+	<Colour id="rt ge ws">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="rt gn ge">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#00FF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="rt gr bl">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,10">#4988ED</stroke>
+	</Colour>
+	<Colour id="rt sw ge">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#000000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="rt ws ge">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="rt ws gr">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#C0C0C0</stroke>
+	</Colour>
+	<Colour id="rt ws sw">
+		<stroke>#FF0000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#000000</stroke>
+	</Colour>
+	<Colour id="sw br rt">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#954A00</stroke>
+		<stroke stroke-dasharray="5,10">#FF0000</stroke>
+	</Colour>
+	<Colour id="sw ge gn">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#00FF00</stroke>
+	</Colour>
+	<Colour id="sw ge ws">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="sw gn rt">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#00FF00</stroke>
+		<stroke stroke-dasharray="5,10">#FF0000</stroke>
+	</Colour>
+	<Colour id="sw gn ws">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#00FF00</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="sw gr bl">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,10">#4988ED</stroke>
+	</Colour>
+	<Colour id="sw gr ge">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="sw rs rt">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FFA4D1</stroke>
+		<stroke stroke-dasharray="5,10">#FF0000</stroke>
+	</Colour>
+	<Colour id="sw rt ge">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="sw rt vi">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#7600EC</stroke>
+	</Colour>
+	<Colour id="sw rt ws">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="sw vi ge">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#7600EC</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="sw vi ws">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#7600EC</stroke>
+		<stroke stroke-dasharray="5,10">#FFFFFF</stroke>
+	</Colour>
+	<Colour id="sw ws bl">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#4988ED</stroke>
+	</Colour>
+	<Colour id="sw ws ge">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="sw ws gn">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#00FF00</stroke>
+	</Colour>
+	<Colour id="sw ws rt">
+		<stroke>#000000</stroke>
+		<stroke stroke-dasharray="10,5">#FFFFFF</stroke>
+		<stroke stroke-dasharray="5,10">#FF0000</stroke>
+	</Colour>
+	<Colour id="ws bl ge">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="10,5">#4988ED</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="ws gn bl">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="10,5">#00FF00</stroke>
+		<stroke stroke-dasharray="5,10">#4988ED</stroke>
+	</Colour>
+	<Colour id="ws gr ge">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="10,5">#C0C0C0</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="ws rt bl">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#4988ED</stroke>
+	</Colour>
+	<Colour id="ws rt ge">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="10,5">#FF0000</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+	<Colour id="ws sw rt">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="10,5">#000000</stroke>
+		<stroke stroke-dasharray="5,10">#FF0000</stroke>
+	</Colour>
+	<Colour id="ws vi ge">
+		<stroke>#FFFFFF</stroke>
+		<stroke stroke-dasharray="10,5">#7600EC</stroke>
+		<stroke stroke-dasharray="5,10">#FFFF00</stroke>
+	</Colour>
+</AllColours>

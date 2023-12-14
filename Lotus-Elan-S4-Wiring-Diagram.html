@@ -5,8 +5,11 @@
 
             var circuit_dropdown;
 
+            var svg_object;
+
             function load_cicuits()
             {   
+                svg_object = document.getElementById("elan_s4");
                 circuit_dropdown = document.getElementById("circuits");
                 var circuit_list_items = document.getElementsByTagName("wdgroup:group");
                 for (let i=0; i<circuit_list_items.length; i++)
@@ -24,18 +27,24 @@
                 var i = circuit_dropdown.selectedIndex;
                 var selected_id = circuit_dropdown.options[i].value;
                 
-                var g_elements =  document.evaluate(
-                                                    "//g[count(ancestor::g)=1]/@id",
-                                                    document,
-                                                    document.createNSResolver("svg"),
-                                                    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
-                                                    null
-                                                    );
-         for (let i=0; i<g_elements.snapshotLength; i++)
-	    {
-	        var g_id = node;
-	        alert(g_id);
-	    }   
+                var g_elements =  svg_object.getElementsByClassName("level-1");
+                for (let i=0; i<g_elements.length; i++)
+	            {
+                    var current_element = g_elements[i];
+                    var current_id = current_element.attributes.getNamedItem('id').value;
+                    
+                    if (current_id == selected_id)
+                    {
+                        //alert(current_id + '  ' + selected_id); 
+                        document.getElementById(selected_id).setAttribute('visibility', 'visible');
+                    }
+                    else
+                    {
+                        //alert(current_element.getNamedItem('id').value);
+                        document.getElementById(current_id).setAttribute('visibility', 'hidden');
+                    }
+                    
+	            }   
             }
         </script>
     </head>
@@ -44,7 +53,7 @@
             <select name="Circuits" id="circuits" onchange="change_circuit()"></select>
         </div>
         <div>
-            <svg width="1190.551pt" height="841.8898pt" viewBox="0 0 1190.551 841.8898">
+            <svg width="1190.551pt" height="841.8898pt" viewBox="0 0 1190.551 841.8898" id="elan_s4"">
             <wdgroup:groups>
                 <wdgroup:group id="wdg1" name="Battery" idref="battery">
                 </wdgroup:group>
@@ -56,25 +65,26 @@
             <defs>
             </defs>
             <g id="components">
-                <g id="battery">
+                <g id="battery" class="level-1">
                     <text fill="#555555" xml:space="preserve" transform="matrix(.6635135 0 0 .6635135 107.7162 59.844179)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 6.0030004 11.0088009 13.509002 16.009202 21.015004 24.012003">Battery</tspan></text>
                     <text fill="#555555" xml:space="preserve" transform="matrix(.6635135 0 0 .6635135 102.6079 69.622989)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0">+</tspan></text>
                     <text fill="#555555" xml:space="preserve" transform="matrix(.6635135 0 0 .6635135 128.5751 53.891847)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0">-</tspan></text>
                     <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M48.03708 18.57129H34.21215M34.21215 18.57129V27.01986M34.21215 27.01986H48.03708M48.03708 27.01986V18.57129"></path>
                 </g>
-                <g id="electric_windows">
-                    <g id="wm_left">
+                <g id="electric_windows" class="level-1">
+                            <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 40.54437 24.08206 38.91508"/>
+                    <g id="wm_left" class="level-2">
                         <text fill="#555555" xml:space="preserve" transform="matrix(.4976352 0 0 .4976352 386.8845 30.1474)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 8.494201 10.494 15.499801 20.505602 25.511403 32.011205 34.511404 42.008405 47.014207 49.514406 54.520208">Window motor</tspan></text>
                         <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M136.0753 8.756657H147.0801M147.0801 8.756657V13.96298M147.0801 13.96298H136.0753M136.0753 13.96298V8.756657"/>
                     </g>
-                    <g id="wm_right">
+                    <g id="wm_right"  class="level-2">
                         <text fill="#555555" xml:space="preserve" transform="matrix(.4976352 0 0 .4976352 386.8845 680.37069)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 8.494201 10.494 15.499801 20.505602 25.511403 32.011205 34.511404 42.008405 47.014207 49.514406 54.520208">Window motor</tspan></text>
                         <rect transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" x="136.0753" y="238.756657" width="11.0048" height="5.2063"/>
                     </g>
                 </g>
-                <g id="rear_lights">
-                    <g id="rl_left">
-                        <g id="rl_indicator">
+                <g id="rear_lights" class="level-1">
+                    <g id="rl_left" class="level-2">
+                        <g id="rl_indicator" class="level-3">
                             <text fill="#555555" xml:space="preserve" transform="matrix(.3317568 0 0 .3317568 43.30935 111.56348)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 2.5002003 7.506001 12.511802 14.511601 19.0116 24.017403 26.517603 31.523404">Indicator</tspan></text>
                             <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.4195 39.72973C24.4195 40.366 23.9037 40.88181 23.26742 40.88181 22.63115 40.88181 22.11534 40.366 22.11534 39.72973 22.11534 39.09345 22.63115 38.57765 23.26742 38.57765 23.9037 38.57765 24.4195 39.09345 24.4195 39.72973"/>
                             <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M22.45278 40.54437 24.08206 38.91508"/>
@@ -90,7 +100,7 @@
                         <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M24.99554 37.04155H21.5393"/>
                         <path transform="matrix(2.834646,0,0,2.834646,0,0)" stroke-width=".1799143" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#555555" d="M21.5393 37.04155V58.54699"/>
                     </g>
-                    <g id="rl_right">
+                    <g id="rl_right" class="level-2">
                         <text fill="#555555" xml:space="preserve" transform="matrix(.3317568 0 0 .3317568 43.30935 499.08747)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 6.4998009 11.505601 16.0056 21.011403 24.008402 28.508402">Reverse</tspan></text>
                         <text fill="#555555" xml:space="preserve" transform="matrix(.3317568 0 0 .3317568 43.30935 514.2251)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 4.5 9.504001 11.502001 13.500001 16.002 18 19.998002 25.002003 30.006005">Tail light</tspan></text>
                         <text fill="#555555" xml:space="preserve" transform="matrix(.3317568 0 0 .3317568 43.30935 529.3597)" font-size="9" font-family="ArialMT"><tspan y="8.0625" x="0 6.0030004 9 14.0058 18.5058 23.5116 26.0118 28.0116 30.011403 35.017206 40.023008">Brake light</tspan></text>

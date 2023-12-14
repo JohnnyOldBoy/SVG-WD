@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="841.89px" height="595.28px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28"
+	 xml:space="preserve">
+<script type="application/ecmascript"> <![CDATA[
+    
+	function circle_click(evt) {
+		
+			var lastNode;
+			var currentNode;
+			var hsParentNode;
+
+			currentNode = evt.target;
+			hsParentNode = currentNode.parentNode;
+
+			while (hsParentNode.parentNode.getAttribute("id") == null)
+			{
+				hsParentNode = hsParentNode.parentNode;
+			
+			}
+			
+			hsParentNode.getElementsByTagName("text")[0].setAttribute("stroke","#FF0000");
+			window.parent.document.getElementById("HSText").value = hsParentNode.getElementsByTagName("text")[0].textContent
+			
+			lastNode = currentNode.ownerDocument.getElementById("lastnode");
+			
+			if (lastNode !== null)
+			{
+				currentNode.parentNode.ownerDocument.getElementById("lastnode").setAttribute("stroke","#000000");
+				currentNode.parentNode.ownerDocument.getElementById("lastnode").removeAttribute("id");
+				currentNode.parentNode.getElementsByTagName("text")[0].setAttribute("id","lastnode");
+			}
+	      		else
+	      		{
+				currentNode.parentNode.getElementsByTagName("text")[0].setAttribute("id","lastnode");
+			}
+	}
+    
+    
+  ]]> </script>
+<g id="Hotspots"  onmouseover="circle_click(evt)">
+	<g>
+		<rect x="129.487" y="274.87" fill="#FFFFFF" width="7.087" height="21.26"/>
+		<text transform="matrix(0 -1 1 0 135.1567 294.7139)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="6.8032">b</tspan><tspan x="3.647" y="0" font-family="'Helvetica'" font-size="6.8032">l br</tspan></text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="138.53" y1="368.453" x2="138.53" y2="175.596"/>
+	<g>
+		<rect x="154.987" y="274.87" fill="#FFFFFF" width="7.087" height="21.26"/>
+		<text transform="matrix(0 -1 1 0 160.6567 294.7139)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="6.8032">b</tspan><tspan x="3.647" y="0" font-family="'Helvetica'" font-size="6.8032">l ws</tspan></text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="164.125" y1="368.453" x2="164.125" y2="175.596"/>
+	<g>
+		<rect x="180.487" y="274.87" fill="#FFFFFF" width="7.087" height="21.26"/>
+		<text transform="matrix(0 -1 1 0 186.1567 294.7139)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="6.8032">b</tspan><tspan x="3.647" y="0" font-family="'Helvetica'" font-size="6.8032">rt sw</tspan></text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="189.721" y1="368.453" x2="189.721" y2="175.596"/>
+	<g>
+		<rect x="205.987" y="274.87" fill="#FFFFFF" width="7.087" height="21.26"/>
+		<text transform="matrix(0 -1 1 0 211.6567 294.7139)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="6.8032">b</tspan><tspan x="3.647" y="0" font-family="'Helvetica'" font-size="6.8032">sw ws</tspan></text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="215.316" y1="368.453" x2="215.316" y2="175.596"/>
+	<g>
+		<rect x="231.487" y="274.87" fill="#FFFFFF" width="7.087" height="21.26"/>
+		<text transform="matrix(0 -1 1 0 237.1567 294.7139)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="6.8032">b</tspan><tspan x="3.647" y="0" font-family="'Helvetica'" font-size="6.8032">rt gn</tspan></text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="240.911" y1="368.453" x2="240.911" y2="175.596"/>
+	<g>
+		<rect x="256.987" y="274.87" fill="#FFFFFF" width="7.087" height="21.26"/>
+		<text transform="matrix(0 -1 1 0 262.6567 294.7139)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="6.8032">b</tspan><tspan x="3.647" y="0" font-family="'Helvetica'" font-size="6.8032">gn rt</tspan></text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="266.506" y1="368.453" x2="266.506" y2="175.596"/>
+	<g>
+		<rect x="282.487" y="274.87" fill="#FFFFFF" width="7.087" height="21.26"/>
+		<text transform="matrix(0 -1 1 0 288.1567 294.7139)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="6.8032">b</tspan><tspan x="3.647" y="0" font-family="'Helvetica'" font-size="6.8032">ws</tspan></text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="292.102" y1="368.453" x2="292.102" y2="175.596"/>
+	<g>
+		<text transform="matrix(0 -1 1 0 545.1572 294.7139)" font-family="'ArialMT'" font-size="6.8032">bl rt</text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="548.377" y1="368.453" x2="548.377" y2="175.596"/>
+	<g>
+		<text transform="matrix(0 -1 1 0 571.6572 294.7139)" font-family="'ArialMT'" font-size="6.8032">bl gn</text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="573.973" y1="368.453" x2="573.973" y2="175.596"/>
+	<g>
+		<text transform="matrix(0 -1 1 0 597.1572 294.7139)" font-family="'ArialMT'" font-size="6.8032">bl ws</text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="599.567" y1="368.453" x2="599.567" y2="175.596"/>
+	<g>
+		<text transform="matrix(0 -1 1 0 622.6572 294.7139)" font-family="'ArialMT'" font-size="6.8032">bl sw</text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="625.162" y1="368.453" x2="625.162" y2="175.596"/>
+	<g>
+		<text transform="matrix(0 -1 1 0 648.1572 294.7139)" font-family="'ArialMT'" font-size="6.8032">ws br</text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="650.758" y1="368.453" x2="650.758" y2="175.596"/>
+	<g>
+		<text transform="matrix(0 -1 1 0 673.6572 294.7139)" font-family="'ArialMT'" font-size="6.8032">sw br</text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="676.354" y1="368.453" x2="676.354" y2="175.596"/>
+	<g>
+		<text transform="matrix(0 -1 1 0 699.1572 294.7139)" font-family="'ArialMT'" font-size="6.8032">gn br</text>
+	</g>
+	<line fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" x1="701.948" y1="368.453" x2="701.948" y2="175.596"/>
+</g>
+<g id="bl_br">
+</g>
+</svg>

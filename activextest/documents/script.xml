@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script type="application/ecmascript"> <![CDATA[
+    function circle_click(evt) {
+      var hotspot = evt.target;
+      evt.target.parentNode.getElementsByTagName("circle")[0].setAttribute("stroke","#FF0000");
+      alert(evt.target.parentNode.getElementsByTagName("text")[0].textContent);
+      
+    }
+    
+    function circle_blur(evt) {
+      var hotspot = evt.target;
+      evt.target.parentNode.getElementsByTagName("circle")[0].setAttribute("stroke","#000000");
+      
+    }
+    
+  ]]> </script>
