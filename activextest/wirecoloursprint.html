@@ -1,0 +1,484 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Wiring diagram</TITLE>
+<META NAME="Generator" CONTENT="TextPad 4.4">
+<META NAME="Author" CONTENT="?">
+<META NAME="Keywords" CONTENT="?">
+<META NAME="Description" CONTENT="?">
+<META http-equiv="X-UA-Compatible" content="chrome=1">
+</HEAD>
+<script language="javascript">
+
+var newWidth;
+var newHeight;
+var svgOrigWidth;
+var vBoxOrigWidth;
+
+function docLoad()
+{
+	svgOrigWidth = window.document.svgimg.width;
+
+	var svgDoc = window.document.svgimg.getSVGDocument();
+	var svgNode = svgDoc.getElementsByTagName("svg")[0];
+
+	var vBox = 	svgNode.getAttribute("viewBox");
+	var vBoxNums = vBox.split(" ");
+	vBoxOrigWidth = vBox[2];
+}
+
+
+function showWireColours()
+{
+
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp = new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+	xmlhttp.open("GET","documents/wdcolours.xml",false);
+	xmlhttp.send();
+	xmlDoc = xmlhttp.responseXML;
+
+	var svgobj = window.document.svgimg.getSVGDocument();
+
+	var svgWires = svgobj.getElementById("Wires");
+
+	for (i=0;i<svgWires.childNodes.length;i++)
+	{
+		if (svgWires.childNodes[i].nodeName != "#text")
+		{
+			var gElement = svgWires.childNodes[i];
+
+			if (gElement != null)
+			{
+
+				var textElements = gElement.getElementsByTagName("text");
+
+				if (textElements != null)
+				{
+
+					var wireCol = textElements[0].textContent;
+
+					var colNodes = xmlDoc.getElementsByTagName("Colour");
+
+					for (j=0;j<colNodes.length;j++)
+					{
+
+						if (colNodes[j].getAttribute("id") == wireCol)
+						{
+							colNode = colNodes[j];
+						}
+					}
+
+					if (colNode != null)
+					{
+
+						if (wireCol.indexOf(" ") == -1)
+						{
+						//Single colour wires
+
+							strokeCol = colNode.getElementsByTagName("stroke")[0].textContent;
+
+							if (strokeCol != null)
+							{
+
+								var lineElements = gElement.getElementsByTagName("line");
+
+								if (lineElements !=null)
+								{
+								//Wires are represented using line elements
+
+									var leLength = lineElements.length;
+
+									if (strokeCol == "#FFFFFF")
+									{
+									//White wire
+
+										//newWire(gElement,lineElements,leLength, strokeCol);
+										for(x=0;x<leLength;x++)
+										{
+				  							var newNode = lineElements[x].cloneNode(false);
+											lineElements[x].setAttribute("stroke","#646464");
+											lineElements[x].setAttribute("stroke-width","2.5");
+				  							gElement.appendChild(newNode);
+											newNode.setAttribute("stroke",strokeCol);
+											newNode.setAttribute("stroke-width","2");
+										}
+									}
+									else
+									{
+									//Any other colour
+
+										for(x=0;x<leLength;x++)
+										{
+											lineElements[x].setAttribute("stroke",strokeCol);
+											lineElements[x].setAttribute("stroke-width","2");
+										}
+									}
+								}
+
+								var pLineElements = gElement.getElementsByTagName("polyline");
+
+								if (pLineElements !=null)
+								{
+								//Wires are represented using polyline elements
+
+									var pleLength = pLineElements.length;
+
+									if (strokeCol == "#FFFFFF")
+									{
+									//White wire
+
+										for(n=0;n<pleLength;n++)
+										{
+				  							var newNode = pLineElements[n].cloneNode(false);
+											pLineElements[n].setAttribute("stroke","#646464");
+											pLineElements[n].setAttribute("stroke-width","2.5");
+			  								gElement.appendChild(newNode);
+											newNode.setAttribute("stroke",strokeCol);
+											newNode.setAttribute("stroke-width","2");
+										}
+									}
+									else
+									{
+									//Any other colour
+
+										for(n=0;n<pleLength;n++)
+										{
+											pLineElements[n].setAttribute("stroke",strokeCol);
+											pLineElements[n].setAttribute("stroke-width","2");
+										}
+									}
+								}
+							}
+						}
+						else
+						{
+						//Multi coloured wires
+
+							strokeCol = colNode.getElementsByTagName("stroke")[0].textContent;
+
+			  				if (strokeCol != null)
+			  				{
+								var multiLineElements = gElement.getElementsByTagName("line");
+
+								if (multiLineElements != null)
+								{
+
+									var mleLength = multiLineElements.length;
+
+				  					if (wireCol.indexOf("ws") != -1)
+				  					{
+
+				  						for (a=0;a<mleLength;a++)
+				  						{
+				  						//White wire
+
+					  						var newNode = multiLineElements[a].cloneNode(false);
+											multiLineElements[a].setAttribute("stroke","#646464");
+											multiLineElements[a].setAttribute("stroke-width","2.5");
+				  							gElement.appendChild(newNode);
+											newNode.setAttribute("stroke",strokeCol);
+											newNode.setAttribute("stroke-width","2");
+				  						}
+				  					}
+				  					else
+				  					{
+										for (a=0;a<mleLength;a++)
+										{
+				  							multiLineElements[a].setAttribute("stroke",strokeCol);
+				  							multiLineElements[a].setAttribute("stroke-width","2");
+				  						}
+				  					}
+
+									for (a=0;a<mleLength;a++)
+									{
+
+					  					for (b=1;b<colNode.childNodes.length;b++)
+					  					{
+
+											if ((colNode.childNodes[b].nodeName != "#text") && (colNode.childNodes[b].getAttribute("stroke-dasharray") != null))
+											{
+					  							var newNode = multiLineElements[a].cloneNode(false);
+					  							newNode.setAttribute("stroke",colNode.childNodes[b].textContent);
+					  							newNode.setAttribute("stroke-dasharray",colNode.childNodes[b].getAttribute("stroke-dasharray"));
+					  							gElement.appendChild(newNode);
+					  						}
+					  					}
+					  				}
+				  				}
+
+								var pMultiLineElements = gElement.getElementsByTagName("polyline");
+
+								if (pMultiLineElements != null)
+								{
+
+									var pMleLength = pMultiLineElements.length;
+
+									if (wireCol.indexOf("ws") != -1)
+									{
+
+			  							for (c=0;c<pMleLength;c++)
+			  							{
+			  							//White wire
+
+				  							var newNode = pMultiLineElements[c].cloneNode(false);
+											pMultiLineElements[c].setAttribute("stroke","#646464");
+											pMultiLineElements[c].setAttribute("stroke-width","2.5");
+			  								gElement.appendChild(newNode);
+											newNode.setAttribute("stroke",strokeCol);
+											newNode.setAttribute("stroke-width","2");
+			  							}
+			  						}
+			  						else
+			  						{
+			  							{
+
+			  								for (c=0;c<pMleLength;c++)
+			  								{
+												pMultiLineElements[c].setAttribute("stroke",strokeCol);
+												pMultiLineElements[c].setAttribute("stroke-width","2");
+											}
+										}
+
+			  							for (c=0;c<pMleLength;c++)
+			  							{
+											for (d=1;d<colNode.childNodes.length;d++)
+											{
+
+												if ((colNode.childNodes[d].nodeName != "#text") && (colNode.childNodes[d].getAttribute("stroke-dasharray") != null))
+												{
+				  									var newNode = pMultiLineElements[c].cloneNode(false);
+				  									newNode.setAttribute("stroke",colNode.childNodes[d].textContent);
+				  									newNode.setAttribute("stroke-dasharray",colNode.childNodes[d].getAttribute("stroke-dasharray"));
+				  									gElement.appendChild(newNode);
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+function zoomIn()
+{
+
+	var svgDoc = window.document.svgimg.getSVGDocument();
+	var svgNode = svgDoc.getElementsByTagName("svg")[0];
+	svgWidth = svgNode.getAttribute("width");
+	svgHeight = svgNode.getAttribute("height");
+
+	newWidth = "";
+
+	for (i=0;i<svgWidth.length;i++)
+	{
+
+		if (IsNumeric(svgWidth[i]))
+		{
+			newWidth = newWidth + svgWidth[i];
+		}
+	}
+
+	newHeight = "";
+
+	for (i=0;i<svgHeight.length;i++)
+	{
+
+		if (IsNumeric(svgHeight[i]))
+		{
+			newHeight = newHeight + svgHeight[i];
+		}
+	}
+
+	newWidth = parseFloat(newWidth) + parseFloat((newWidth/100)*10);
+	newHeight = parseFloat(newHeight) + parseFloat((newHeight/100)*10);
+
+	svgimg.setAttribute("width", newWidth + "px");
+	svgimg.setAttribute("height", newHeight + "px");
+
+	svgNode.setAttribute("width",newWidth + "px");
+	svgNode.setAttribute("height",newHeight + "px");
+
+}
+
+function zoomOut()
+{
+
+	var svgDoc = window.document.svgimg.getSVGDocument();
+	var svgNode = svgDoc.getElementsByTagName("svg")[0];
+	svgWidth = svgNode.getAttribute("width");
+	svgHeight = svgNode.getAttribute("height");
+
+	newWidth = "";
+
+	for (i=0;i<svgWidth.length;i++)
+	{
+
+		if (IsNumeric(svgWidth[i]))
+		{
+			newWidth = newWidth + svgWidth[i];
+		}
+	}
+
+	newHeight = "";
+
+	for (i=0;i<svgHeight.length;i++)
+	{
+
+		if (IsNumeric(svgHeight[i]))
+		{
+			newHeight = newHeight + svgHeight[i];
+		}
+	}
+
+	newWidth = parseFloat(newWidth) - parseFloat((newWidth/100)*10);
+	newHeight = parseFloat(newHeight) - parseFloat((newHeight/100)*10);
+
+	if ( parseFloat(newWidth) > 0 && parseFloat(newHeight) > 0 )
+	{
+		svgimg.setAttribute("width", newWidth + "px");
+		svgimg.setAttribute("height", newHeight + "px");
+
+		svgNode.setAttribute("width",newWidth + "px");
+		svgNode.setAttribute("height",newHeight + "px");
+	}
+
+}
+
+function newWire(gElm, lElm, len, sCol)
+{
+
+	for(i=0;i<len;i++)
+	{
+		var newNode = lElm[i].cloneNode(false);
+		lElm[i].setAttribute("stroke","#818181");
+		lElm[i].setAttribute("stroke-width","2.3");
+		gElm.appendChild(newNode);
+		newNode.setAttribute("stroke",sCol);
+		newNode.setAttribute("stroke-width","2");
+	}
+}
+
+function IsNumeric(ch)
+{
+	var validChars = "0123456789.";
+	var isNumber=true;
+
+	if (validChars.indexOf(ch) == -1)
+	{
+		isNumber = false;
+	}
+
+	return isNumber;
+
+}
+
+function printPreview()
+{
+	var contNode;
+	var svgDoc = window.document.svgimg.getSVGDocument();
+	var groupNodes = svgDoc.getElementsByTagName("g");
+
+	for (i=0;i<groupNodes.length;i++)
+	{
+		if (groupNodes[i].getAttribute("id") != null && groupNodes[i].getAttribute("id") == "Continuation")
+		{
+			contNode = groupNodes[i];
+
+			if (ppv.value == "Print preview")
+			{
+				contNode.removeAttribute("display");
+				ppv.value = "Normal view";
+			}
+			else
+			{
+				contNode.setAttribute("display","none");
+				ppv.value = "Print preview";
+			}
+		}
+
+	}
+}
+
+function pageOne()
+{
+
+	var svgDoc = window.document.svgimg.getSVGDocument();
+	var svgNode = svgDoc.getElementsByTagName("svg")[0];
+
+	var vBox = 	svgNode.getAttribute("viewBox");
+	var vBoxNums = vBox.split(" ");
+
+	window.document.svgimg.width = svgOrigWidth
+
+	vBoxNums[2] = vBoxOrigWidth;
+
+	vBoxNums[0] = 0;
+	vBoxNums[2] = vBoxNums[2]/2;
+
+	vBox = vBoxNums[0] + " " + vBoxNums[1] + " " + vBoxNums[2] + " " + vBoxNums[3];
+
+	svgNode.setAttribute("viewBox",vBox);
+
+	svgNode.setAttribute("width",vBoxNums[2] + "px");
+
+	window.document.svgimg.width = vBoxNums[2];
+}
+
+function pageTwo()
+{
+
+	var svgDoc = window.document.svgimg.getSVGDocument();
+	var svgNode = svgDoc.getElementsByTagName("svg")[0];
+
+	var vBox = 	svgNode.getAttribute("viewBox");
+	var vBoxNums = vBox.split(" ");
+
+	window.document.svgimg.width = svgOrigWidth
+
+	vBoxNums[2] = vBoxOrigWidth;
+
+	vBoxNums[0] = vBoxNums[2];
+
+	vBox = vBoxNums[0] + " " + vBoxNums[1] + " " + vBoxNums[2] + " " + vBoxNums[3];
+
+	svgNode.setAttribute("viewBox",vBox);
+
+	svgNode.setAttribute("width",vBoxNums[2] + "px");
+
+	window.document.svgimg.width = vBoxNums[2];
+}
+
+
+function printDoc()
+{
+	var printWindow = window.open("printsize.html");
+}
+
+</script>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#FF0000" VLINK="#800000" ALINK="#FF00FF" onLoad="docLoad()">
+<input id="HSText" type="textbox" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="show_colours" type="button" value="Show colours" onClick="showWireColours()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="zoom_in"  type="button" value="Zoom in"onClick="zoomIn()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="zoom_out" type="button" value="Zoom out" onClick="zoomOut()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="print" type="button" value="Print" onClick="printDoc()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="ppv" type="button" value="Print preview" onClick="printPreview()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- <input id="page_one" type="button" value="Page 1" onClick="pageOne()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input id="page_two" type="button" value="Page 2" onClick="pageTwo()"> -->
+<object id="svgimg" width="1190.551" height="841.89" type="image/svg+xml" data="documents/JM Wire without continuation arrows PA VERSION 2.svg">
+</object>
+
+</BODY>
+</HTML>

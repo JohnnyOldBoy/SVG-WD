@@ -1,0 +1,79 @@
+//	var printWindow = window.open();
+//	var printDoc = printWindow.document.open("text/html");
+	//printDoc.writeln('<HTML><HEAD>')
+	//printDoc.writeln('<META http-equiv=\"X-UA-Compatible\" content=\"chrome=1\">');
+	//printDoc.writeln('<SCRIPT language=\"javascript\" src=\"printsize.js\"></SCRIPT>');
+	//printDoc.writeln('</HEAD><BODY onLoad=\"setPrintSize()\">');
+	//printDoc.writeln('<object id=\"lhPage\" width=\"595px\" height=\"841px\" type=\"image/svg+xml\" data=\"documents/JM Wire with continuation arrows print.svg"></object>');
+	//printDoc.writeln('<P></P>');
+	//printDoc.writeln('<object id=\"lhPage\" width=\"595px\" height=\"841px\" type=\"image/svg+xml\" data=\"documents/JM Wire with continuation arrows print.svg"></object>');
+	//printDoc.writeln('</BODY></HTML>');
+
+	//var lhPage = printDoc.lhPage.getSVGDocument();
+	//var lhSvgNode = lhPage.getElementsByTagName("svg")[0];
+	//lhSvgNode.setAttribute("width",595 );
+	//lhSvgNode.setAttribute("height",841);
+	//var lhVBox = 	lhSvgNode.getAttribute("viewBox");
+	//var lhVBoxNums = lhVBox.split(" ");
+	//lhVBoxNums[0] = "0";
+	//lhVBox = lhVBoxNums[0] + " " + lhVBoxNums[1] + " " + lhVBoxNums[2] + " " + lhVBoxNums[3];
+	//lhSvgNode.setAttribute("viewBox",lhVBox);
+
+	//var rhPage = printDoc.rhPage.getSVGDocument();
+	//var rhSvgNode = rhPage.getElementsByTagName("svg")[0];
+	//rhSvgNode.setAttribute("width",595 );
+	//rhSvgNode.setAttribute("height",841);
+	//var rhVBox = 	rhSvgNode.getAttribute("viewBox");
+	//var lhVBoxNums = rhVBox.split(" ");
+	//lhVBoxNums[0] = lhVBoxNums[2];
+	//rhVBox = lhVBoxNums[0] + " " + lhVBoxNums[1] + " " + lhVBoxNums[2] + " " + lhVBoxNums[3];
+	//rhSvgNode.setAttribute("viewBox",rhVBox);
+
+
+	//textCont = printDoc.getElementsByTagName("HTML")
+	//alert(textCont[0].outerHTML);
+	//var printWindow = window.open();
+	//printWindow.document.write = textCont;
+
+	var lhPage = window.document.lhPage.getSVGDocument();
+	var lhSvgNode = lhPage.getElementsByTagName("svg")[0];
+	lhSvgNode.setAttribute("width",595 );
+	lhSvgNode.setAttribute("height",841);
+	var lhVBox = 	lhSvgNode.getAttribute("viewBox");
+	var lhVBoxNums = lhVBox.split(" ");
+	lhVBoxNums[0] = "0";
+	lhVBox = lhVBoxNums[0] + " " + lhVBoxNums[1] + " " + lhVBoxNums[2] + " " + lhVBoxNums[3];
+	lhSvgNode.setAttribute("viewBox",lhVBox);
+
+	var rhPage = window.document.rhPage.getSVGDocument();
+	var rhSvgNode = rhPage.getElementsByTagName("svg")[0];
+	rhSvgNode.setAttribute("width",595 );
+	rhSvgNode.setAttribute("height",841);
+	var rhVBox = 	rhSvgNode.getAttribute("viewBox");
+	var lhVBoxNums = rhVBox.split(" ");
+	lhVBoxNums[0] = lhVBoxNums[2];
+	rhVBox = lhVBoxNums[0] + " " + lhVBoxNums[1] + " " + lhVBoxNums[2] + " " + lhVBoxNums[3];
+	rhSvgNode.setAttribute("viewBox",rhVBox);
+
+
+	printDoc.writeln("var lhPage = window.document.lhPage.getSVGDocument();");
+	printDoc.writeln("var lhSvgNode = lhPage.getElementsByTagName(\'svg\')[0];");
+	printDoc.writeln("lhSvgNode.setAttribute(\'width\',595 );");
+	printDoc.writeln("lhSvgNode.setAttribute(\'height\',841);");
+	printDoc.writeln("var lhVBox = 	lhSvgNode.getAttribute(\'viewBox\');");
+	printDoc.writeln("var lhVBoxNums = lhVBox.split(\' \');");
+	printDoc.writeln("lhVBoxNums[0] = \'0\';");
+	printDoc.writeln("lhVBox = lhVBoxNums[0] +\' \' + lhVBoxNums[1] + \' \' + lhVBoxNums[2] + \' \' + lhVBoxNums[3];");
+	printDoc.writeln("lhSvgNode.setAttribute(\'viewBox\',lhVBox);");
+	printDoc.writeln("");
+	printDoc.writeln("var rhPage = window.document.rhPage.getSVGDocument();");
+	printDoc.writeln("var rhSvgNode = rhPage.getElementsByTagName(\'svg\')[0];");
+	printDoc.writeln("rhSvgNode.setAttribute(\'width\',595 );");
+	printDoc.writeln("rhSvgNode.setAttribute(\'height\',841);");
+	printDoc.writeln("var rhVBox = 	rhSvgNode.getAttribute(\'viewBox\');");
+	printDoc.writeln("var lhVBoxNums = rhVBox.split(\' \');");
+	printDoc.writeln("lhVBoxNums[0] = lhVBoxNums[2];");
+	printDoc.writeln("rhVBox = lhVBoxNums[0] + \' \' + lhVBoxNums[1] + \' \' + lhVBoxNums[2] + \' \' + lhVBoxNums[3];");
+	printDoc.writeln("rhSvgNode.setAttribute(\'viewBox\',rhVBox);");
+	printDoc.writeln("}");
+	printDoc.writeln("</SCRIPT>");

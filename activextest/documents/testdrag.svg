@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="325" y="20" width="150" height="100"
+    	xmlns:drag="http://www.codedread.com/dragsvg"
+    	onload="initializeDraggableElements(); enableDrag(document.getElementById('widget'));"
+	onmouseup="mouseUp(evt)"
+	onmousemove="mouseMove(evt)" 
+>
+	<script id="draggableLibrary" xlink:href="documents/dragsvg.js" />
+	<rect x="1" y="1" width="148" height="98" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #FFFFFF" transform="translate(-1,1) "/>
+	<rect id="widget" x="41" y="30" width="20" height="40" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #9dc2de" transform="translate(-1,1) " drag:enable="true"/>
+	<rect x="86" y="30" width="20" height="40" style="stroke: black; stroke-opacity: 1; stroke-width: 1; fill: #9dc2de" drag:enable="true"/>
+</svg>

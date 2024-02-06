@@ -1,11 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" 
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
      xmlns:wdgroup="http://www.niromtec.co.uk" 
-     xsi:noNamespaceSchemaLocation="/home/john/Documents/svg.xsd" 
+     xsi:noNamespaceSchemaocation="/home/john/Documents/svg.xsd" 
      version="1.1" width="1190.551pt" height="841.8898pt" viewBox="0 0 1190.551 841.8898" onload="set_controls()">
 <wdgroup:groups>
     <wdgroup:group id="wdg1" name="Battery">
     </wdgroup:group>
+
 </wdgroup:groups>
 <script>
     <![CDATA[

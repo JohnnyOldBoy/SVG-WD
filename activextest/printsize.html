@@ -1,0 +1,58 @@
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<script language="javascript">
+function setPrintSize()
+{
+
+	var lhPage = window.document.lhPage.getSVGDocument();
+
+	var lhGroupNodes = lhPage.getElementsByTagName("g");
+
+	for (i=0;i<lhGroupNodes.length;i++)
+	{
+		if (lhGroupNodes[i].getAttribute("id") != null && lhGroupNodes[i].getAttribute("id") == "Continuation")
+		{
+			lhGroupNodes[i].removeAttribute("display");
+		}
+
+	}
+
+	var lhSvgNode = lhPage.getElementsByTagName("svg")[0];
+	lhSvgNode.setAttribute("width",595 );
+	lhSvgNode.setAttribute("height",841);
+	var lhVBox = 	lhSvgNode.getAttribute("viewBox");
+	var lhVBoxNums = lhVBox.split(" ");
+	lhVBoxNums[0] = "0";
+	lhVBox = lhVBoxNums[0] + " " + lhVBoxNums[1] + " " + (parseFloat(lhVBoxNums[2])/2) + " " + lhVBoxNums[3];
+	lhSvgNode.setAttribute("viewBox",lhVBox);
+
+	var rhPage = window.document.rhPage.getSVGDocument();
+	var rhGroupNodes = rhPage.getElementsByTagName("g");
+
+	for (i=0;i<rhGroupNodes.length;i++)
+	{
+		if (rhGroupNodes[i].getAttribute("id") != null && rhGroupNodes[i].getAttribute("id") == "Continuation")
+		{
+			rhGroupNodes[i].removeAttribute("display");
+		}
+
+	}
+
+	var rhSvgNode = rhPage.getElementsByTagName("svg")[0];
+	rhSvgNode.setAttribute("width",595 );
+	rhSvgNode.setAttribute("height",841);
+	var rhVBox = 	rhSvgNode.getAttribute("viewBox");
+	var lhVBoxNums = rhVBox.split(" ");
+	lhVBoxNums[0] = (parseFloat(lhVBoxNums[2])/2);
+	rhVBox = lhVBoxNums[0] + " " + lhVBoxNums[1] + " " + (parseFloat(lhVBoxNums[2])/2) + " " + lhVBoxNums[3];
+	rhSvgNode.setAttribute("viewBox",rhVBox);
+
+}
+</script>
+</head>
+<body onload="setPrintSize()">
+<object id="lhPage" width="595px" height="841px" type="image/svg+xml" data="documents/JM Wire with continuation arrows print.svg"></object>
+<p></p>
+<object id="rhPage" width="595px" height="841px" type="image/svg+xml" data="documents/JM Wire with continuation arrows print.svg"></object>
+
+</body></html>

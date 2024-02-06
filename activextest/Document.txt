@@ -1,0 +1,47 @@
+//				  			var plElements = gElement.getElementsByTagName("polyline");
+
+//				  			if (plElements !=null)
+//				  			{
+//				  				for(x=0;x<plElements.length;x++)
+//				  				{
+//				  					if (wireCol.indexOf(" ") == -1)
+//				  					{
+//				  						plElements[x].setAttribute("stroke",strokeCol);
+//				  						plElements[x].setAttribute("stroke-width","2");
+//				  					}
+//				  				}
+//				  			}
+				  	}
+				  //}
+				}
+//				  	else
+//				  	{
+//				  	}
+
+
+
+
+//				  				else
+//				  				{
+//				  					lineElements[x].setAttribute("stroke",strokeCol);
+//				  					lineElements[x].setAttribute("stroke-width","2");
+
+//				  					for (n=1;n=colNode.childNodes.length -1;n++)
+//				  					{
+//										if (colNode.childNodes[n].nodeName != "#text")
+//										{
+//				  							var newNode = lineElements[x].cloneNode(false);
+//				  							newNode.setAttribute("stroke",colNode.childNodes[n].textContent);
+//				  							newNode.setAttribute("stroke-dasharray",colNode.getElementsByTagName("stroke")[n].getAttribute("stroke-dasharray"));
+//				  							gElement.appendChild("newNode");
+//				  						}
+//				  					}
+//				  				}
+//				  			}
+//				  		}
+
+
+
+
+
+
