@@ -2,23 +2,6 @@ var circuit_dropdown;
 
 var svg_object;
 
-function add_ids()
-{
-    svg_object = document.getElementById("the_rest");
-    var g_elements =  svg_object.;
-    for (let i=0; i<g_elements.length; i++)
-    {
-        var a = "a";
-        var current_element = g_elements[i];
-        var x = current_element.node(Type);
-       if (x == "Element")
-        {  
-            
-            current_element.setAttribute('id', a.concat(Date.now()));
-        }
-    }
-}
-
 function load_cicuits()
 {   
     svg_object = document.getElementById("elan_s4");
